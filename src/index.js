@@ -49,10 +49,9 @@ const pizzaData = [
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   );
 }
@@ -65,6 +64,27 @@ function Pizza() {
       <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
     </div>
   );
+}
+
+function Header() {
+  return <h1>OBU Pizza Services</h1>;
+}
+
+function Menu() {
+  return (
+    <div>
+      <h2>Our Menu</h2>
+      <Pizza />
+      <Pizza />
+      <Pizza />
+    </div>
+  );
+}
+
+function Footer() {
+  const time = new Date().toLocaleTimeString();
+
+  return <footer>{time}. We're Open!</footer>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
