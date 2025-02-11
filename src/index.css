@@ -57,7 +57,7 @@ body {
   display: block;
   content: "";
   height: 6px;
-  width: 15rem;
+  width: 9rem;
   background-color: #edc84b;
   position: absolute;
   top: calc(50% - 1px);
